@@ -20,3 +20,12 @@ sudo yum install git -y
 sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
 sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
 sudo yum install -y apache-maven
+
+# Clone r5
+cd /home/ec2-user
+mkdir gitprojetcs
+cd gitprojetcs
+git clone  https://github.com/conveyal/r5.git r5-3.2.0
+cd r5-3.2.0
+git checkout tags/v3.4.1
+mvn package -DskipTests
