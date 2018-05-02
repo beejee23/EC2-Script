@@ -14,11 +14,3 @@ curl -LO http://dartfirststate.com/information/routes/gtfs_data/dartfirststate_d
 
 # Install git
 sudo yum install git -y
-
-# Clone r5
-mkdir /home/ec2-user/gitprojetcs
-cd /home/ec2-user/gitprojetcs
-git clone  https://github.com/conveyal/r5.git r5-3.2.0
-cd r5-3.2.0
-git checkout tags/v3.4.1
-mvn package -DskipTests
