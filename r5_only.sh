@@ -12,3 +12,6 @@ cd delaware_r5
 
 curl http://download.geofabrik.de/north-america/us/delaware-latest.osm.pbf -o delaware-latest.osm.pbf
 curl -LO http://dartfirststate.com/information/routes/gtfs_data/dartfirststate_de_us.zip -o dartfirststate_de_us.zip
+
+# Install git
+sudo yum install git -y
