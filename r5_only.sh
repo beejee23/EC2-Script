@@ -15,3 +15,8 @@ curl -LO http://dartfirststate.com/information/routes/gtfs_data/dartfirststate_d
 
 # Install git
 sudo yum install git -y
+
+# Install maven
+sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+sudo yum install -y apache-maven
