@@ -26,7 +26,7 @@ sudo mv /home/ec2-user/modeify-files/settings.yml /home/ec2-user/modeify-v1.3.0/
 sudo mv /home/ec2-user/modeify-files/env.yml /home/ec2-user/modeify-v1.3.0/configurations/default/env.yml
 
 # Run yarn
-sudo chmod 755 -R /home/ec2-use/modeify-v1.3.0
+sudo chmod 755 -R /home/ec2-user/modeify-v1.3.0
 cd /home/ec2-use/modeify-v1.3.0
 sudo yarn install
 
