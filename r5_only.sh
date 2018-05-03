@@ -16,4 +16,4 @@ curl -LO http://dartfirststate.com/information/routes/gtfs_data/dartfirststate_d
 sudo yum install git -y
 
 # Download the r5build from public bucket
-aws s3 sync s3://commuteplusde/r5build r5build
+aws s3 sync s3://r5-3.2.0 r5build
