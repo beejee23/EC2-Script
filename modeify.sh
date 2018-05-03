@@ -29,3 +29,12 @@ sudo mv /home/ec2-user/modeify-files/env.yml /home/ec2-user/modeify-v1.3.0/confi
 sudo chmod 755 -R /home/ec2-use/modeify-v1.3.0
 cd /home/ec2-use/modeify-v1.3.0
 sudo yarn install
+
+# Clone modeify-react-native-v2 and run yarn
+cd /home/ec2-user
+git clone https://github.com/conveyal/ModeifyReactNative.git modeify-react-native-v2
+sudo mv /home/ec2-user/modeify-files/config.json /home/ec2-user/modeify-react-native-v2/config.json
+sudo mv /home/ec2-user/modeify-files/package.json /home/ec2-user/modeify-react-native-v2/package.json
+cd modeify-react-native-v2
+yarn install
+npm start
