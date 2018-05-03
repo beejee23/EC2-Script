@@ -17,3 +17,8 @@ sudo yum install git -y
 
 # Download the r5build from public bucket
 aws s3 sync s3://r5-3.2.0 r5build
+
+# Build jar
+cd /home/ec2-user/r5build
+sudo java -Xmx1G -cp target/v3.4.1.jar com.conveyal.r5.R5Main point --build /home/ec2-user/delaware_r5
+sudo java -Xmx1G -cp target/v3.4.1.jar com.conveyal.r5.R5Main point --graphs /home/ec2-user/delaware_r5
