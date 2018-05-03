@@ -24,6 +24,11 @@ cd /home/ec2-user/r5build
 sudo java -Xmx1G -cp target/v3.4.1.jar com.conveyal.r5.R5Main point --build /home/ec2-user/delaware_r5
 sudo java -Xmx1G -cp target/v3.4.1.jar com.conveyal.r5.R5Main point --graphs /home/ec2-user/delaware_r5
 
+# Install node and npm
+sudo yum install -y gcc-c++ make
+curl -sL https://rpm.nodesource.com/setup_8.x | sudo -E bash -
+sudo yum install -y nodejs
+
 # Clone conveyal/modeify.git
 cd /home/ec2-user
 git clone https://github.com/conveyal/modeify.git modeify-v1.3.0
