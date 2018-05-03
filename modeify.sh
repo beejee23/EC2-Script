@@ -18,3 +18,9 @@ cd /home/ec2-user
 git clone https://github.com/conveyal/modeify.git modeify-v1.3.0
 cd modeify-v1.3.0
 git checkout tags/v1.3.0
+
+# Update modeify settings and environment files
+cd /home/ec2-user
+aws s3 sync s3://modeify-files modeify-files
+sudo mv /home/ec2-user/modeify-files/settings.yml /home/ec2-user/modeify-v1.3.0/configurations/default/settings.yml
+sudo mv /home/ec2-user/modeify-files/env.yml /home/ec2-user/modeify-v1.3.0/configurations/default/env.yml
